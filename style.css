@@ -32,7 +32,8 @@
 
     /*border radiuses*/
     --border-radius-small: 8px;
-    --border-radius-medium: 30px;
+    --border-radius-medium: 12px;
+    --border-radiu-large: 30px;
     --border-radius-circle: 50%;
 
     --size-max-width:1300px /*max site width*/
@@ -98,3 +99,56 @@ header .navbar {
 .navbar .nav-menu .nav-link:hover {
     transform: scale(1.025);
 } 
+
+/*hero section*/
+.hero-section {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 175px;
+    padding: 9em;
+    background: var(--primary-color);
+    border-radius: var(--border-radiu-large);
+}
+
+.buttons {
+    margin-top: 50px;
+    padding: 10p
+}
+
+.title {
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    margin: 10px;
+}
+
+.description {
+    font-size: var(--font-size-medium);
+}
+
+.aboutme-button {
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-medium);
+    color: var(--primary-color);
+    padding: 1.0em 1.75em;
+    margin: 10px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.portfolio-button {
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-medium);
+    color: var(--primary-color);
+    padding: 1em 1.75em;
+    margin: 10px;
+    font-weight: var(--font-weight-semibold);
+}
+
+
