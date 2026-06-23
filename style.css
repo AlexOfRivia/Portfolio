@@ -104,6 +104,8 @@ header .navbar {
 .hero-section {
     display: flex;
     justify-content: center;
+    animation-name: moveUp;
+    animation-duration: 1200ms;
 }
 
 .hero-section .section-content {
@@ -120,16 +122,22 @@ header .navbar {
 
 .buttons {
     margin-top: 50px;
-    padding: 10p
+    padding: 10px;
+    animation-name: fadeIn;
+    animation-duration: 1000ms;
 }
 
 .title {
+    animation-name: fadeIn;
+    animation-duration: 1000ms;
     color: var(--white-color);
     font-size: var(--font-size-xl);
     margin: 10px;
 }
 
 .description {
+    animation-name: fadeIn;
+    animation-duration: 1200ms;
     font-size: var(--font-size-medium);
 }
 
@@ -152,3 +160,27 @@ header .navbar {
 }
 
 
+
+/*animations*/
+
+@keyframes moveUp {
+	from {
+		transform: translateY(100px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+		visibility: hidden;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+	}
+}
