@@ -101,6 +101,7 @@ header .navbar {
 } 
 
 /*hero section*/
+
 .hero-section {
     display: flex;
     justify-content: center;
@@ -121,10 +122,13 @@ header .navbar {
 }
 
 .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
-    padding: 10px;
+    gap: 2rem;
     animation-name: fadeIn;
-    animation-duration: 1000ms;
+    animation-duration: 1300ms;
 }
 
 .title {
@@ -142,12 +146,15 @@ header .navbar {
 }
 
 .aboutme-button {
+    justify-content: center;
+    align-items: center;
     background: var(--secondary-color);
     border-radius: var(--border-radius-medium);
     color: var(--primary-color);
     padding: 1.0em 1.75em;
     margin: 10px;
     font-weight: var(--font-weight-semibold);
+    transition: 100ms;
 }
 
 .portfolio-button {
@@ -157,8 +164,67 @@ header .navbar {
     padding: 1em 1.75em;
     margin: 10px;
     font-weight: var(--font-weight-semibold);
+    transition: 100ms;
 }
 
+.aboutme-button:hover {
+    background: var(--medium-gray);
+    transform: scale(1.025);
+}
+
+.portfolio-button:hover {
+    background: var(--medium-gray);
+    transform: scale(1.025);
+}
+
+
+/*about me section*/
+
+.aboutme-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 230px;
+    
+}
+
+.aboutme-section-content {
+    display: grid;
+	grid-template-columns: 25rem 1fr;
+	justify-content: center;
+
+    background: var(--primary-color);
+	max-width: 1280px;
+    padding: 20px;
+	margin: 10px;
+    min-width: 1700px;
+    border-radius: var(--border-radius-medium);
+}
+
+.my-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-image {
+    width: 240px;
+    height: 250px;
+    border-radius: var(--border-radius-medium);
+}
+
+.about-title {
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.about-description {
+    color: var(--secondary-color);
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-normal);
+}
+
+/*tech stack*/
 
 
 /*animations*/
