@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    /*colors*/
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #6260ff;
+    --secondary-color: #e4e4ff;
+    --medium-gray: #cccccc;
+
+    /*font sizes*/
+    --font-size-small: 0.9rem;
+    --font-size-normal: 1.0rem;
+    --font-size-medium: 1.15rem;
+    --font-size-large: 1.5rem;
+    --font-size-xl: 2.0rem;
+    --font-size-xxl: 2.4rem;
+    
+    /*font weights*/
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+
+    /*border radiuses*/
+    --border-radius-small: 8px;
+    --border-radius-medium: 30px;
+    --border-radius-circle: 50%;
+
+    --size-max-width:1300px /*max site width*/
+}
+
+/*whole site*/
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: var(--font-weight-normal);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color) !important;
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-medium);
+    background-color: var(--secondary-color);
+    padding: 0.5em 3em;
+    border-radius: var(--border-radius-small);
+    transition: 100ms;
+}
+
+.btn:hover {
+    background-color: var(--medium-gray);
+    transform: scale(1.025);
+}
+
+/*nav bar styling*/
+
+header {
+    background: var(--primary-color);
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.navbar .logo-text {
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
+} 
+
+.navbar .nav-menu .nav-link:hover {
+    transform: scale(1.025);
+} 
