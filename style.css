@@ -56,7 +56,7 @@ a{
     align-items: center;
     color: var(--primary-color) !important;
     font-size: var(--font-size-normal);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-semibold);
     background-color: var(--secondary-color);
     padding: 0.5em 3em;
     border-radius: var(--border-radius-small);
@@ -136,6 +136,7 @@ header .navbar {
     animation-duration: 1000ms;
     color: var(--white-color);
     font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
     margin: 10px;
 }
 
@@ -143,6 +144,7 @@ header .navbar {
     animation-name: fadeIn;
     animation-duration: 1200ms;
     font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-medium);
 }
 
 .aboutme-button {
@@ -153,7 +155,7 @@ header .navbar {
     color: var(--primary-color);
     padding: 1.0em 1.75em;
     margin: 10px;
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-bold);
     transition: 100ms;
 }
 
@@ -163,7 +165,7 @@ header .navbar {
     color: var(--primary-color);
     padding: 1em 1.75em;
     margin: 10px;
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-bold);
     transition: 100ms;
 }
 
@@ -207,7 +209,7 @@ header .navbar {
 }
 
 .aboutme-image {
-    width: 240px;
+    width: 250px;
     height: 250px;
     border-radius: var(--border-radius-medium);
 }
@@ -225,6 +227,80 @@ header .navbar {
 }
 
 /*tech stack*/
+
+.section-title {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xxl);
+}
+
+.techstack-section {
+    position: relative;
+    flex-direction: column;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	padding: 7rem 2rem 3rem;
+	gap: 2rem;
+	overflow: hidden;
+}
+
+.techstack-list {
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 1.5rem;           
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    list-style: none;     
+    padding: 0;
+}
+
+.techstack-item {
+    list-style-type: none; 
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-medium);
+    padding: 2rem 1.5rem;         
+    transition: 300ms;
+    max-width: fit-content;  
+    box-sizing: border-box;
+    opacity: 0%;
+}
+
+.item-containter {                 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+}
+
+.item-image {
+    width: 60px;                 
+    height: 60px;                
+    object-fit: contain;          
+    margin-top: 10px;
+}
+
+.item-text {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-medium);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.appear {
+	animation-name: appear;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+/*projects*/
+
+
+
+/*contact*/
+
 
 
 /*animations*/
@@ -248,5 +324,14 @@ header .navbar {
 		transform: translateY(0);
 		opacity: 1;
 		visibility: visible;
+	}
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
