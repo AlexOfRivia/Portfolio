@@ -39,6 +39,9 @@
     --size-max-width:1300px /*max site width*/
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /*whole site*/
 
 ul {
