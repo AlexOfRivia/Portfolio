@@ -242,6 +242,7 @@ header .navbar {
 .section-title {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-xxl);
+    margin-bottom: 20px;
 }
 
 .techstack-section {
@@ -312,6 +313,81 @@ header .navbar {
 
 /*projects*/
 
+.projects-section {
+    position: relative;
+    flex-direction: column;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+    padding: 8rem;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style-type: none; 
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-medium);
+    padding: 2rem 1.5rem;         
+    transition: 200ms;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.project-item:hover {
+    transform: scale(1.025);
+}
+
+.project-skills {
+    display: flex;
+    position: relative;
+    gap: 0.5rem;
+    margin-top: 10px; margin-bottom: 5px;
+    
+}
+.project-skill {
+   border: 3px solid var(--primary-color);
+   padding: 2px;
+   color: var(--primary-color);
+   font-weight: var(--font-weight-semibold);
+   border-radius: var(--border-radius-small);
+   transition: 200ms;
+}
+
+.project-skill:hover {
+    transform: scale(1.10);
+}
+
+.project-desc {
+    display: flex;
+    flex-wrap: wrap;
+    max-width:max-content;
+    margin-bottom: 30px;
+}
+
+.source-code-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: var(--border-radius-small);
+    padding: 1em 1.75em;  
+    transition: 200ms;
+}
+
+.source-code-btn:hover {
+    background-color: var(--medium-gray);
+}
+
+.image-container {
+    display: flex;
+}
+
+.p-image{
+    width: 350px;
+    height: 175px;
+}
 
 
 /*contact*/
@@ -319,7 +395,6 @@ header .navbar {
 
 
 /*animations*/
-
 @keyframes moveUp {
 	from {
 		transform: translateY(100px);
