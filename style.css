@@ -338,6 +338,7 @@ header .navbar {
     transition: 200ms;
     width: 600px;
     margin-bottom: 50px;
+    opacity: 0%;
 }
 
 .project-item:hover {
