@@ -7,7 +7,6 @@
 document.addEventListener("DOMContentLoaded", () =>{
     const projects = document.querySelectorAll(".project-item");    //looking for all projects in html doc
 
-    // Poprawiono: ujednolicono nazwę na observerOptions (z 's' na końcu)
     const observerOptions = {
         root: null,
         rootMargin: "0px",
