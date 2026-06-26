@@ -39,6 +39,9 @@
     --size-max-width:1300px /*max site width*/
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /*whole site*/
 
 ul {
@@ -71,6 +74,9 @@ a{
 /*nav bar styling*/
 
 header {
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
     background: var(--primary-color);
 }
 
@@ -335,6 +341,7 @@ header .navbar {
     transition: 200ms;
     width: 600px;
     margin-bottom: 50px;
+    opacity: 0%;
 }
 
 .project-item:hover {
