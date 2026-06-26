@@ -151,6 +151,7 @@ header .navbar {
     animation-duration: 1200ms;
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-medium);
+    color: var(--secondary-color);
 }
 
 .aboutme-button {
