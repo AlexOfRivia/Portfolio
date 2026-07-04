@@ -1,11 +1,19 @@
 /*TODO
 - impement reading progress bar
 - implement darkmode
-- implement animation loading only after scrolling */
-
+*/
 
 document.addEventListener("DOMContentLoaded", () =>{
     const projects = document.querySelectorAll(".project-item");    //looking for all projects in html doc
+    const hamburger = document.querySelector('.hamburger');
+    const navbar = document.querySelector('.nav-menu')
+
+    if (hamburger && navbar) {
+        hamburger.addEventListener('click', (e) => {
+            e.preventDefault();
+            navbar.classList.toggle('active');
+        });
+    }
 
     const observerOptions = {
         root: null,
