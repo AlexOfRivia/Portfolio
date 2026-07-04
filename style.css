@@ -93,6 +93,7 @@ a{
 
 header {
     position: sticky;
+    width: 100%;
     top: 0; 
     z-index: 1000;
     background: var(--primary-color);
@@ -506,6 +507,9 @@ header .navbar {
 /*Media queries*/
 
 @media only screen and (max-width: 870px) {
+    /*edit navbar to only show hamburger*/
+
+
     .buttons {
         display: flex;
         flex-direction: column;
@@ -530,6 +534,31 @@ header .navbar {
         margin: 10px;
 
         border-radius: var(--border-radius-medium);
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        gap: 2rem;
+    }
+
+    .contact-list {
+	    display: flex;
+        margin: auto;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }   
+
+    .navbar .nav-menu {
+        display: none;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .hamburger {
+        display: flex;
     }
 
 }
