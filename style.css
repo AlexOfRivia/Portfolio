@@ -53,6 +53,24 @@ a{
     font-weight: var(--font-weight-normal);
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
 .btn {
     display: flex;
     justify-content: center;
@@ -117,17 +135,15 @@ header .navbar {
 
 .hero-section .section-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
-
-    margin-top: 175px;
-    padding: 9em;
+    margin-top: 60px;
+    padding: 3rem 1.5rem;
     background: var(--primary-color);
     border-radius: var(--border-radiu-large);
 }
 
-.buttons {
+ .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +151,8 @@ header .navbar {
     gap: 2rem;
     animation-name: fadeIn;
     animation-duration: 1300ms;
-}
+
+} 
 
 .title {
     animation-name: fadeIn;
@@ -155,22 +172,26 @@ header .navbar {
 }
 
 .aboutme-button {
+    display: flex;
     justify-content: center;
     align-items: center;
     background: var(--secondary-color);
     border-radius: var(--border-radius-medium);
     color: var(--primary-color);
-    padding: 1.0em 1.75em;
+    padding: 1.0rem 1.75rem;
     margin: 10px;
     font-weight: var(--font-weight-bold);
     transition: 100ms;
 }
 
 .portfolio-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--secondary-color);
     border-radius: var(--border-radius-medium);
     color: var(--primary-color);
-    padding: 1em 1.75em;
+    padding: 1rem 1.75rem;
     margin: 10px;
     font-weight: var(--font-weight-bold);
     transition: 100ms;
@@ -211,7 +232,7 @@ header .navbar {
 	max-width: 1280px;
     padding: 20px;
 	margin: 10px;
-    min-width: 1700px;
+
     border-radius: var(--border-radius-medium);
 }
 
@@ -340,7 +361,6 @@ header .navbar {
     border-radius: var(--border-radius-medium);
     padding: 2rem 1.5rem;         
     transition: 200ms;
-    width: 600px;
     margin-bottom: 50px;
     opacity: 0%;
 }
@@ -481,4 +501,35 @@ header .navbar {
 	100% {
 		opacity: 1;
 	}
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 870px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 1rem;
+        animation-name: fadeIn;
+        animation-duration: 1300ms;
+
+    } 
+
+    .aboutme-section-content {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 25rem 1fr;
+        justify-content: center;
+
+        background: var(--primary-color);
+        max-width: 1280px;
+        padding: 20px;
+        margin: 10px;
+
+        border-radius: var(--border-radius-medium);
+    }
+
 }
