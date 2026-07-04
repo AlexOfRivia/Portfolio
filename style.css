@@ -364,6 +364,7 @@ header .navbar {
     transition: 200ms;
     margin-bottom: 50px;
     opacity: 0%;
+    max-width: 800px;
 }
 
 .project-item:hover {
@@ -372,6 +373,7 @@ header .navbar {
 
 .project-skills {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     gap: 0.5rem;
     margin-top: 10px; margin-bottom: 5px;
@@ -557,8 +559,36 @@ header .navbar {
         gap: 18px;
     }
 
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column; 
+        position: absolute;
+        top: 70px;             
+        left: 0;
+        width: 100%;
+        background: var(--primary-color); 
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+
     .hamburger {
         display: flex;
+    }
+
+    .project-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        list-style-type: none; 
+        background: var(--secondary-color);
+        border-radius: var(--border-radius-medium);
+        padding: 2rem 1.5rem;         
+        transition: 200ms;
+        margin-bottom: 50px;
+        opacity: 0%;
+        width: 400px;
     }
 
 }
